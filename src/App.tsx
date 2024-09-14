@@ -1,5 +1,8 @@
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import React from 'react';
+
+import Layout from './components/layout/layout';
 import Home from './pages/home/home';
+<<<<<<< HEAD
 import About from './pages/about/about';
 import Details from './pages/details/details';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,3 +29,19 @@ function App() {
 }
 
 export default App;
+=======
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+export default function App(){
+    return (
+        <Router>
+            <Layout>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                </Routes>
+            </Layout>
+        </Router>
+    );
+};
+>>>>>>> 1e3b2f8bc7c30c04170118037cace28ff580ee37
